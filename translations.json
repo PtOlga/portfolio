@@ -1,0 +1,308 @@
+{
+  "en": {
+    "name": "Olga Petrovskaya",
+    "subtitle": "Python AI Developer & ERP/CRM Consultant",
+    "location": "Charlottenberg, Sweden",
+    "nav": {
+      "about": "About",
+      "skills": "Skills",
+      "experience": "Experience",
+      "projects": "Projects",
+      "education": "Education",
+      "contact": "Contact"
+    },
+    "sections": {
+      "about": {
+        "title": "About Me",
+        "description": "IT Consultant & Python Developer with 15+ years experience in ERP/CRM implementation and business automation. Currently working at Legal Status UAB developing AI-integrated solutions and workflow automation for international legal services. Based in Sweden, fluent in Russian, English, and Swedish."
+      },
+      "skills": {
+        "title": "Core Competencies",
+        "description": "Over 15 years of diverse experience across programming, system implementation, and business automation",
+        "categories": {
+          "programming": "Programming & AI",
+          "databases": "Databases & Systems",
+          "erp": "ERP & CRM",
+          "web": "Web & Marketing"
+        }
+      },
+      "experience": {
+        "title": "Work Experience",
+        "description": "A journey from programmer to company owner and IT consultant"
+      },
+      "projects": {
+        "title": "Featured Projects",
+        "description": "Showcase of successful implementations and developments"
+      },
+      "education": {
+        "title": "Education & Certifications",
+        "description": "Continuous learning and professional development"
+      },
+      "contact": {
+        "title": "Get In Touch",
+        "description": "Open to new opportunities and interesting projects"
+      }
+    },
+    "experience_items": [
+      {
+        "date": "2022 - Current",
+        "position": "IT Consultant",
+        "company": "Legal Status UAB - International",
+        "description": "Developing AI-integrated solutions and workflow automation for international legal services. Python development with focus on machine learning, API integrations, and data analysis automation."
+      },
+      {
+        "date": "2020 - Current",
+        "position": "Freelance IT Specialist",
+        "company": "Remote Work - Sweden",
+        "description": "Web development, WordPress, Python + AI, API integrations, SEO optimization, Google Ads management, and social media marketing for various international clients."
+      },
+      {
+        "date": "2016 - 2020",
+        "position": "Director and Co-owner",
+        "company": "IT Company \"Solutions of the Future\" - Minsk, BY",
+        "description": "Led company specializing in ERP and CRM implementation. Managed staff, projects, and business development. Oversaw software development as \"playing coach\" and maintained corporate Bitrix-based solutions."
+      },
+      {
+        "date": "2011 - 2016",
+        "position": "Head of Software",
+        "company": "\"Armtek\" Group - Minsk, BY",
+        "description": "Managed team of 12 developers. Led automation projects for 26 retail stores. Implemented WMS, TMS systems with SAP integration. Worked with ITIL methodology and Agile development."
+      }
+    ],
+    "projects": [
+      {
+        "title": "AI Legal Workflow Automation",
+        "description": "Developed Python-based AI system for Legal Status UAB to automate document processing and workflow management for international legal cases.",
+        "tags": ["Python", "AI/ML", "API", "Automation"]
+      },
+      {
+        "title": "Multi-Store ERP Implementation",
+        "description": "Led implementation of comprehensive ERP system across 26 retail locations for Armtek Group, integrating WMS, TMS, and SAP modules.",
+        "tags": ["ERP", "SAP", "WMS", "TMS"]
+      },
+      {
+        "title": "BI Analytics Platform",
+        "description": "Built comprehensive BI analytics platform using OLAP Cube and Power BI technologies for distribution and retail business intelligence.",
+        "tags": ["Power BI", "OLAP", "Analytics", "Reporting"]
+      }
+    ],
+    "education": [
+      {
+        "date": "2025",
+        "degree": "Python Programming and AI Development",
+        "institution": "NBI/Academy of Commerce - Sweden",
+        "description": "Advanced certification in Python programming with focus on AI development and machine learning applications."
+      },
+      {
+        "date": "1992",
+        "degree": "Systems Engineer - Process Automation",
+        "institution": "Minsk Radio Engineering Institute - Belarus",
+        "description": "Master's degree in Systems Engineering with specialization in manufacturing process automation."
+      }
+    ]
+  },
+  "sv": {
+    "name": "Olga Petrovskaya",
+    "subtitle": "Python AI-utvecklare & ERP/CRM-konsult",
+    "location": "Charlottenberg, Sverige",
+    "nav": {
+      "about": "Om mig",
+      "skills": "Kompetenser",
+      "experience": "Erfarenhet",
+      "projects": "Projekt",
+      "education": "Utbildning",
+      "contact": "Kontakt"
+    },
+    "sections": {
+      "about": {
+        "title": "Om mig",
+        "description": "IT-konsult & Python-utvecklare med 15+ års erfarenhet av ERP/CRM-implementering och affärsautomation. Arbetar för närvarande på Legal Status UAB med att utveckla AI-integrerade lösningar och arbetsflödesautomation för internationella juridiska tjänster. Baserad i Sverige, flytande ryska, engelska och svenska."
+      },
+      "skills": {
+        "title": "Kärnkompetenser",
+        "description": "Över 15 års mångsidig erfarenhet inom programmering, systemimplementering och affärsautomation",
+        "categories": {
+          "programming": "Programmering & AI",
+          "databases": "Databaser & System",
+          "erp": "ERP & CRM",
+          "web": "Webb & Marknadsföring"
+        }
+      },
+      "experience": {
+        "title": "Arbetslivserfarenhet",
+        "description": "En resa från programmerare till företagsägare och IT-konsult"
+      },
+      "projects": {
+        "title": "Utvalda projekt",
+        "description": "Showcase av framgångsrika implementeringar och utvecklingar"
+      },
+      "education": {
+        "title": "Utbildning & Certifieringar",
+        "description": "Kontinuerlig inlärning och professionell utveckling"
+      },
+      "contact": {
+        "title": "Kom i kontakt",
+        "description": "Öppen för nya möjligheter och intressanta projekt"
+      }
+    },
+    "experience_items": [
+      {
+        "date": "2022 - Nuvarande",
+        "position": "IT-konsult",
+        "company": "Legal Status UAB - International",
+        "description": "Utvecklar AI-integrerade lösningar och arbetsflödesautomation för internationella juridiska tjänster. Python-utveckling med fokus på maskininlärning, API-integrationer och dataanalysautomation."
+      },
+      {
+        "date": "2020 - Nuvarande",
+        "position": "Frilansande IT-specialist",
+        "company": "Distansarbete - Sverige",
+        "description": "Webbutveckling, WordPress, Python + AI, API-integrationer, SEO-optimering, Google Ads-hantering och marknadsföring i sociala medier för olika internationella kunder."
+      },
+      {
+        "date": "2016 - 2020",
+        "position": "Direktör och delägare",
+        "company": "IT-företag \"Solutions of the Future\" - Minsk, BY",
+        "description": "Ledde företag specialiserat på ERP- och CRM-implementering. Hanterade personal, projekt och affärsutveckling. Övervakade mjukvaruutveckling som \"spelande tränare\" och underhöll företags Bitrix-baserade lösningar."
+      },
+      {
+        "date": "2011 - 2016",
+        "position": "Chef för mjukvara",
+        "company": "\"Armtek\" Group - Minsk, BY",
+        "description": "Hanterade team av 12 utvecklare. Ledde automatiseringsprojekt för 26 butiker. Implementerade WMS, TMS-system med SAP-integration. Arbetade med ITIL-metodik och Agile-utveckling."
+      }
+    ],
+    "projects": [
+      {
+        "title": "AI juridisk arbetsflödesautomation",
+        "description": "Utvecklade Python-baserat AI-system för Legal Status UAB för att automatisera dokumentbehandling och arbetsflödeshantering för internationella juridiska ärenden.",
+        "tags": ["Python", "AI/ML", "API", "Automation"]
+      },
+      {
+        "title": "Multi-Store ERP-implementering",
+        "description": "Ledde implementering av omfattande ERP-system över 26 butiker för Armtek Group, integrerande WMS, TMS och SAP-moduler.",
+        "tags": ["ERP", "SAP", "WMS", "TMS"]
+      },
+      {
+        "title": "BI Analytics-plattform",
+        "description": "Byggde omfattande BI-analytisk plattform med OLAP Cube och Power BI-teknologier för distribution och detaljhandel business intelligence.",
+        "tags": ["Power BI", "OLAP", "Analytics", "Rapportering"]
+      }
+    ],
+    "education": [
+      {
+        "date": "2025",
+        "degree": "Python-programmering och AI-utveckling",
+        "institution": "NBI/Academy of Commerce - Sverige",
+        "description": "Avancerad certifiering i Python-programmering med fokus på AI-utveckling och maskininlärningsapplikationer."
+      },
+      {
+        "date": "1992",
+        "degree": "Systemingenjör - Processautomation",
+        "institution": "Minsk Radio Engineering Institute - Belarus",
+        "description": "Masterexamen i systemteknik med specialisering inom tillverkningsprocessautomation."
+      }
+    ]
+  },
+  "ru": {
+    "name": "Olga Petrovskaya",
+    "subtitle": "Python AI-разработчик и ERP/CRM-консультант",
+    "location": "Чарлоттенберг, Швеция",
+    "nav": {
+      "about": "Обо мне",
+      "skills": "Навыки",
+      "experience": "Опыт",
+      "projects": "Проекты",
+      "education": "Образование",
+      "contact": "Контакты"
+    },
+    "sections": {
+      "about": {
+        "title": "Обо мне",
+        "description": "IT-консультант и Python-разработчик с 15+ летним опытом внедрения ERP/CRM и автоматизации бизнеса. В настоящее время работаю в Legal Status UAB, разрабатываю AI-интегрированные решения и автоматизацию рабочих процессов для международных юридических услуг. Проживаю в Швеции, владею русским, английским и шведским языками."
+      },
+      "skills": {
+        "title": "Ключевые компетенции",
+        "description": "Более 15 лет разностороннего опыта в программировании, внедрении систем и автоматизации бизнеса",
+        "categories": {
+          "programming": "Программирование и ИИ",
+          "databases": "Базы данных и системы",
+          "erp": "ERP и CRM",
+          "web": "Веб и маркетинг"
+        }
+      },
+      "experience": {
+        "title": "Опыт работы",
+        "description": "Путь от программиста до владельца компании и IT-консультанта"
+      },
+      "projects": {
+        "title": "Избранные проекты",
+        "description": "Демонстрация успешных внедрений и разработок"
+      },
+      "education": {
+        "title": "Образование и сертификаты",
+        "description": "Непрерывное обучение и профессиональное развитие"
+      },
+      "contact": {
+        "title": "Связаться со мной",
+        "description": "Открыта для новых возможностей и интересных проектов"
+      }
+    },
+    "experience_items": [
+      {
+        "date": "2022 - Настоящее время",
+        "position": "IT-консультант",
+        "company": "Legal Status UAB - International",
+        "description": "Разработка AI-интегрированных решений и автоматизации рабочих процессов для международных юридических услуг. Python-разработка с фокусом на машинное обучение, API-интеграции и автоматизацию анализа данных."
+      },
+      {
+        "date": "2020 - Настоящее время",
+        "position": "Фрилансер IT-специалист",
+        "company": "Удаленная работа - Швеция",
+        "description": "Веб-разработка, WordPress, Python + AI, API-интеграции, SEO-оптимизация, управление Google Ads и маркетинг в социальных сетях для различных международных клиентов."
+      },
+      {
+        "date": "2016 - 2020",
+        "position": "Директор и совладелец",
+        "company": "IT-компания \"Решения Будущего\" - Минск, BY",
+        "description": "Руководил компанией, специализирующейся на внедрении ERP и CRM. Управлял персоналом, проектами и развитием бизнеса. Курировал разработку ПО как \"играющий тренер\" и поддерживал корпоративные решения на базе Bitrix."
+      },
+      {
+        "date": "2011 - 2016",
+        "position": "Руководитель отдела разработки",
+        "company": "Группа \"Армтек\" - Минск, BY",
+        "description": "Управлял командой из 12 разработчиков. Руководил проектами автоматизации для 26 магазинов. Внедрял системы WMS, TMS с интеграцией SAP. Работал по методологии ITIL и Agile-разработке."
+      }
+    ],
+    "projects": [
+      {
+        "title": "Автоматизация юридических процессов с ИИ",
+        "description": "Разработал систему на базе Python с ИИ для Legal Status UAB для автоматизации обработки документов и управления рабочими процессами по международным юридическим делам.",
+        "tags": ["Python", "ИИ/МО", "API", "Автоматизация"]
+      },
+      {
+        "title": "Внедрение ERP в сети магазинов",
+        "description": "Руководил внедрением комплексной ERP-системы в 26 торговых точках группы Армтек, интегрируя модули WMS, TMS и SAP.",
+        "tags": ["ERP", "SAP", "WMS", "TMS"]
+      },
+      {
+        "title": "Платформа BI-аналитики",
+        "description": "Создал комплексную платформу BI-аналитики с использованием технологий OLAP Cube и Power BI для бизнес-аналитики в сфере дистрибуции и розничной торговли.",
+        "tags": ["Power BI", "OLAP", "Аналитика", "Отчетность"]
+      }
+    ],
+    "education": [
+      {
+        "date": "2025",
+        "degree": "Программирование на Python и разработка ИИ",
+        "institution": "NBI/Academy of Commerce - Швеция",
+        "description": "Продвинутая сертификация в программировании на Python с фокусом на разработку ИИ и приложения машинного обучения."
+      },
+      {
+        "date": "1992",
+        "degree": "Системный инженер - Автоматизация процессов",
+        "institution": "Минский радиотехнический институт - Беларусь",
+        "description": "Степень магистра в области системной инженерии со специализацией в автоматизации производственных процессов."
+      }
+    ]
+  }
+}
