@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olga Petrovskaya - IT Portfolio</title>
+    <meta name="description" content="Olga Petrovskaya - Python AI Developer, ERP/CRM Consultant with 15+ years experience">
+    <meta name="keywords" content="Python, AI, Machine Learning, ERP, CRM, IT Consultant, Sweden">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Olga Petrovskaya - IT Portfolio">
+    <meta property="og:description" content="Python AI Developer & ERP/CRM Consultant with 15+ years experience">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #7BA428;
+            --secondary-green: #6B9220;
+            --dark-green: #5A7D1A;
+            --light-green: #E8F5D0;
+            --white: #ffffff;
+            --dark-gray: #333333;
+            --light-gray: #f5f5f5;
+            --text-gray: #666666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+            color: white;
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.2);
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .header-text h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header-text .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-item:hover {
+            color: white;
+        }
+
+        .contact-item i {
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Navigation */
+        .nav {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .nav-link {
+            color: var(--dark-gray);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            background: var(--primary-green);
+            color: white;
+        }
+
+        /* Sections */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section:nth-child(even) {
+            background: var(--light-gray);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-green);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill-category i {
+            font-size: 1.5rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: var(--light-green);
+            color: var(--dark-green);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--primary-green);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            width: calc(50% - 20px);
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: calc(50% + 20px);
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            right: -20px;
+            border-left-color: white;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::before {
+            left: -20px;
+            border-right-color: white;
+        }
+
+        .timeline-date {
+            background: var(--primary-green);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .timeline-content h3 {
+            color: var(--primary-green);
+            margin-bottom: 10px;
+        }
+
+        .timeline-content h4 {
+            color: var(--text-gray);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            color: var(--primary-green);
+            margin-bottom: 15px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .project-tag {
+            background: var(--light-green);
+            color: var(--dark-green);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-gray);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-link {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-link:hover {
+            color: var(--primary-green);
+        }
+
+        /* Language Selector */
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .language-btn {
+            background: rgba(255,255,255,0.9);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin: 0 2px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .language-btn.active {
+            background: var(--primary-green);
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .header-text h1 {
+                font-size: 2rem;
+            }
+
+            .nav-container {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: calc(100% - 40px);
+                left: 40px !important;
+                text-align: left !important;
+            }
+
+            .timeline-content::before {
+                left: -20px !important;
+                border-right-color: white !important;
+                border-left-color: transparent !important;
+            }
+
+            .skills-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="language-btn active" onclick="switchLanguage('en')">EN</button>
+        <button class="language-btn" onclick="switchLanguage('sv')">SV</button>
+        <button class="language-btn" onclick="switchLanguage('ru')">RU</button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'%3E%3Ccircle cx='75' cy='75' r='75' fill='%23ffffff' opacity='0.2'/%3E%3Ctext x='75' y='85' text-anchor='middle' font-family='Arial' font-size='60' fill='%23ffffff'%3EOP%3C/text%3E%3C/svg%3E" alt="Olga Petrovskaya" class="profile-photo">
+                <div class="header-text">
+                    <h1 data-lang="en">Olga Petrovskaya</h1>
+                    <p class="subtitle" data-lang="en">Python AI Developer & ERP/CRM Consultant</p>
+                    <div class="contact-info">
+                        <a href="tel:+46737686471" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            +46 737 686 471
+                        </a>
+                        <a href="mailto:5441700@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            5441700@gmail.com
+                        </a>
+                        <a href="#" class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-lang="en">Charlottenberg, Sweden</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/olga-petrovskaya" class="contact-item" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#about" class="nav-link" data-lang="en">About</a>
+                <a href="#skills" class="nav-link" data-lang="en">Skills</a>
+                <a href="#experience" class="nav-link" data-lang="en">Experience</a>
+                <a href="#projects" class="nav-link" data-lang="en">Projects</a>
+                <a href="#education" class="nav-link" data-lang="en">Education</a>
+                <a href="#contact" class="nav-link" data-lang="en">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-lang="en">About Me</h2>
+                <p data-lang="en">IT Consultant & Python Developer with 15+ years experience in ERP/CRM implementation and business automation. Currently working at Legal Status UAB developing AI-integrated solutions and workflow automation for international legal services. Based in Sweden, fluent in Russian, English, and Swedish.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-lang="en">Core Competencies</h2>
+                <p data-lang="en">Over 15 years of diverse experience across programming, system implementation, and business automation</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> <span data-lang="en">Programming & AI</span></h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">API Integration</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> <span data-lang="en">Databases & Systems</span></h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MS SQL Server</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">T-SQL</span>
+                        <span class="skill-tag">IBM Cognos BI</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">OLAP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> <span data-lang="en">ERP & CRM</span></h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Bitrix24</span>
+                        <span class="skill-tag">SAP Integration</span>
+                        <span class="skill-tag">1C Development</span>
+                        <span class="skill-tag">WMS</span>
+                        <span class="skill-tag">TMS</span>
+                        <span class="skill-tag">Business Process</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-globe"></i> <span data-lang="en">Web & Marketing</span></h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">SEO</span>
+                        <span class="skill-tag">Google Ads</span>
+                        <span class="skill-tag">Google Analytics</span>
+                        <span class="skill-tag">SMM</span>
+                        <span class="skill-tag">Digital Marketing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-lang="en">Work Experience</h2>
+                <p data-lang="en">A journey from programmer to company owner and IT consultant</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Current</div>
+                        <h3 data-lang="en">IT Consultant</h3>
+                        <h4>Legal Status UAB - International</h4>
+                        <p data-lang="en">Developing AI-integrated solutions and workflow automation for international legal services. Python development with focus on machine learning, API integrations, and data analysis automation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - Current</div>
+                        <h3 data-lang="en">Freelance IT Specialist</h3>
+                        <h4 data-lang="en">Remote Work - Sweden</h4>
+                        <p data-lang="en">Web development, WordPress, Python + AI, API integrations, SEO optimization, Google Ads management, and social media marketing for various international clients.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2016 - 2020</div>
+                        <h3 data-lang="en">Director and Co-owner</h3>
+                        <h4>IT Company "Solutions of the Future" - Minsk, BY</h4>
+                        <p data-lang="en">Led company specializing in ERP and CRM implementation. Managed staff, projects, and business development. Oversaw software development as "playing coach" and maintained corporate Bitrix-based solutions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2011 - 2016</div>
+                        <h3 data-lang="en">Head of Software</h3>
+                        <h4>"Armtek" Group - Minsk, BY</h4>
+                        <p data-lang="en">Managed team of 12 developers. Led automation projects for 26 retail stores. Implemented WMS, TMS systems with SAP integration. Worked with ITIL methodology and Agile development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-lang="en">Featured Projects</h2>
+                <p data-lang="en">Showcase of successful implementations and developments</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-lang="en">AI Legal Workflow Automation</h3>
+                        <p data-lang="en">Developed Python-based AI system for Legal Status UAB to automate document processing and workflow management for international legal cases.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">AI/ML</span>
+                            <span class="project-tag">API</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-lang="en">Multi-Store ERP Implementation</h3>
+                        <p data-lang="en">Led implementation of comprehensive ERP system across 26 retail locations for Armtek Group, integrating WMS, TMS, and SAP modules.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">ERP</span>
+                            <span class="project-tag">SAP</span>
+                            <span class="project-tag">WMS</span>
+                            <span class="project-tag">TMS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-lang="en">BI Analytics Platform</h3>
+                        <p data-lang="en">Built comprehensive BI analytics platform using OLAP Cube and Power BI technologies for distribution and retail business intelligence.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">OLAP</span>
+                            <span class="project-tag">Analytics</span>
+                            <span class="project-tag">Reporting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-lang="en">Education & Certifications</h2>
+                <p data-lang="en">Continuous learning and professional development</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025</div>
+                        <h3 data-lang="en">Python Programming and AI Development</h3>
+                        <h4>NBI/Academy of Commerce - Sweden</h4>
+                        <p data-lang="en">Advanced certification in Python programming with focus on AI development and machine learning applications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1992</div>
+                        <h3 data-lang="en">Systems Engineer - Process Automation</h3>
+                        <h4>Minsk Radio Engineering Institute - Belarus</h4>
+                        <p data-lang="en">Master's degree in Systems Engineering with specialization in manufacturing process automation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-lang="en">Get In Touch</h2>
+                <p data-lang="en">Open to new opportunities and interesting projects</p>
+            </div>
+            <div style="text-align: center;">
+                <div class="contact-info" style="justify-content: center; margin-bottom: 30px;">
+                    <a href="tel:+46737686471" class="contact-item" style="color: var(--primary-green);">
+                        <i class="fas fa-phone"></i>
+                        +46 737 686 471
+                    </a>
+                    <a href="mailto:5441700@gmail.com" class="contact-item" style="color: var(--primary-green);">
+                        <i class="fas fa-envelope"></i>
+                        5441700@gmail.com
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/olga-petrovskaya" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/PtOlga" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://status.law" class="social-link" target="_blank">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    <a href="https://profile.indeed.com/resume" class="social-link" target="_blank">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Olga Petrovskaya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation link highlighting
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Language switcher (basic implementation)
+        const translations = {
+            en: {
+                "About": "About",
+                "Skills": "Skills",
+                "Experience": "Experience",
+                "Projects": "Projects",
+                "Education": "Education",
+                "Contact": "Contact",
+                "About Me": "About Me",
+                "Core Competencies": "Core Competencies",
+                "Work Experience": "Work Experience",
+                "Featured Projects": "Featured Projects",
+                "Education & Certifications": "Education & Certifications",
+                "Get In Touch": "Get In Touch"
+            },
+            sv: {
+                "About": "Om mig",
+                "Skills": "Kompetenser",
+                "Experience": "Erfarenhet",
+                "Projects": "Projekt",
+                "Education": "Utbildning",
+                "Contact": "Kontakt",
+                "About Me": "Om mig",
+                "Core Competencies": "Kärnkompetenser",
+                "Work Experience": "Arbetslivserfarenhet",
+                "Featured Projects": "Utvalda projekt",
+                "Education & Certifications": "Utbildning & Certifieringar",
+                "Get In Touch": "Kom i kontakt"
+            },
+            ru: {
+                "About": "Обо мне",
+                "Skills": "Навыки",
+                "Experience": "Опыт",
+                "Projects": "Проекты",
+                "Education": "Образование",
+                "Contact": "Контакты",
+                "About Me": "Обо мне",
+                "Core Competencies": "Ключевые компетенции",
+                "Work Experience": "Опыт работы",
+                "Featured Projects": "Избранные проекты",
+                "Education & Certifications": "Образование и сертификаты",
+                "Get In Touch": "Связаться со мной"
+            }
+        };
+
+        function switchLanguage(lang) {
+            // Update active button
+            document.querySelectorAll('.language-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Update text content (basic implementation - you would expand this)
+            document.querySelectorAll('[data-lang="en"]').forEach(element => {
+                const key = element.textContent.trim();
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.skill-category, .timeline-item, .project-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
